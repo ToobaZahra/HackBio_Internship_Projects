@@ -1,0 +1,8 @@
+- "left reads":
+  - "/content/assembly/corrected/SRR13554759_1.trim.fastq.00.0_0.cor.fastq.gz"
+  "orientation": "fr"
+  "right reads":
+  - "/content/assembly/corrected/SRR13554759_2.trim.fastq.00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/content/assembly/corrected/SRR13554759__unpaired.00.0_0.cor.fastq.gz"
+  "type": "paired-end"

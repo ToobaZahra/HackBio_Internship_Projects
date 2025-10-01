@@ -1,0 +1,6 @@
+- "left reads":
+  - "/content/trim/SRR13554759_1.trim.fastq.gz"
+  "orientation": "fr"
+  "right reads":
+  - "/content/trim/SRR13554759_2.trim.fastq.gz"
+  "type": "paired-end"

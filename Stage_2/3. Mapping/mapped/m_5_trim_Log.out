@@ -1,0 +1,137 @@
+STAR version=2.7.10b
+STAR compilation time,server,dir=2022-11-01T09:53:26-04:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+STAR git: On branch master ; commit c6f8efc2c7043ef83bf8b0d9bed36bbb6b9b1133 ; diff files: CHANGES.md 
+##### Command Line:
+STAR --genomeDir genome/genomeIndex --readFilesIn trim/m_5_trim.fq --outFileNamePrefix mapped/m_5_trim_ --outSAMtype BAM SortedByCoordinate --outSAMattributes All
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 mapped/m_5_trim_
+###### All USER parameters from Command Line:
+genomeDir                     genome/genomeIndex     ~RE-DEFINED
+readFilesIn                   trim/m_5_trim.fq        ~RE-DEFINED
+outFileNamePrefix             mapped/m_5_trim_     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+outSAMattributes              All        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+genomeDir                         genome/genomeIndex
+readFilesIn                       trim/m_5_trim.fq   
+outFileNamePrefix                 mapped/m_5_trim_
+outSAMtype                        BAM   SortedByCoordinate   
+outSAMattributes                  All   
+
+-------------------------------
+##### Final effective command line:
+STAR   --genomeDir genome/genomeIndex   --readFilesIn trim/m_5_trim.fq      --outFileNamePrefix mapped/m_5_trim_   --outSAMtype BAM   SortedByCoordinate      --outSAMattributes All   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+WARNING: --limitBAMsortRAM=0, will use genome size as RAM limit for BAM sorting
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate      --genomeDir genomeIndex   --genomeFastaFiles c_elegans.fa   
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              c_elegans.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  0     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   -     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               101187584   827362812        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 7
+1	I	15072434	0
+2	II	15279421	15204352
+3	III	13783801	30670848
+4	IV	17493829	44564480
+5	V	20924180	62128128
+6	X	17718942	83099648
+7	MtDNA	13794	100925440
+Started loading the genome: Tue Sep  2 09:18:17 2025
+
+Genome: size given as a parameter = 101187584
+SA: size given as a parameter = 827362812
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=101187584;  nSAbyte=827362812
+GstrandBit=32   SA number of indices=200572802
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 101187584 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 101187584 bytes
+SA file size: 827362812 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 827362812 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Tue Sep  2 09:18:19 2025
+
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Thread #0 end of input stream, nextChar=-1
+BAM sorting: 53884 mapped reads
+BAM sorting bins genomic start loci:
+1	0	2785756
+2	0	4646816
+3	0	6099002
+4	0	7138914
+5	0	8816081
+6	0	10433413
+7	0	12966234
+8	0	15070478
+9	1	2716620
+10	1	4869988
+11	1	5278556
+12	1	7350479
+13	1	9056636
+14	1	11139662
+15	1	13516301
+16	2	2328937
+17	2	4476735
+18	2	5716622
+19	2	6970991
+20	2	8132250
+21	2	9797167
+22	2	10987269
+23	2	13563718
+24	3	2315176
+25	3	4999707
+26	3	5249486
+27	3	5457440
+28	3	7506762
+29	3	8979237
+30	3	9770233
+31	3	10093134
+32	3	10774945
+33	3	12135326
+34	3	14852894
+35	4	1178549
+36	4	2330897
+37	4	5878702
+38	4	7511921
+39	4	10184762
+40	4	11078082
+41	4	12601389
+42	4	14780622
+43	4	18235109
+44	5	422144
+45	5	4963224
+46	5	7232374
+47	5	11201841
+48	5	16213430
+Completed: thread #0
+Sep 02 09:18:20 ..... finished mapping
+RAM after mapping:
+VmPeak:	 2640124 kB; VmSize:	 2592272 kB; VmHWM:	 2565332 kB; VmRSS:	 2556560 kB; 
+RAM after freeing genome index memory:
+VmPeak:	 2640124 kB; VmSize:	  156304 kB; VmHWM:	 2565332 kB; VmRSS:	  120592 kB; 
+Sep 02 09:18:21 ..... started sorting BAM
+Max memory needed for sorting = 217424
+ALL DONE!
