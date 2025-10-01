@@ -1,0 +1,5 @@
+﻿# Large files to ignore
+Stage_1/all_folders/Miniconda3-latest-Linux-x86_64.sh
+Stage_1/all_folders/SRR13554759_1.fastq.gz
+Stage_1/all_folders/SRR13554759_2.fastq.gz
+Stage_1/all_folders/all_folder.zip
